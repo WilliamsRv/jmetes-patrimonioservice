@@ -1,0 +1,113 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< pe.edu.vallegrande:patrimonio-service >----------------
+[INFO] Building patrimonio-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.11:prepare-agent (default) @ patrimonio-service ---
+[INFO] argLine set to -javaagent:/home/polula/.m2/repository/org/jacoco/org.jacoco.agent/0.8.11/org.jacoco.agent-0.8.11-runtime.jar=destfile=/home/polula/Documentos/Williams-2026/PRS/PRS-BACKEND/vg-ms-patrimonioservice/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ patrimonio-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ patrimonio-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ patrimonio-service ---
+[INFO] skip non existing resourceDirectory /home/polula/Documentos/Williams-2026/PRS/PRS-BACKEND/vg-ms-patrimonioservice/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ patrimonio-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ patrimonio-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest
+16:53:12.822 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest]: AssetDisposalRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:53:13.236 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration pe.edu.vallegrande.patrimonio_service.PatrimonioServiceApplication for test class pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-04-23T16:53:14.171-05:00  INFO 207158 --- [patrimonio-service] [           main] .i.a.i.r.AssetDisposalRestControllerTest : Starting AssetDisposalRestControllerTest using Java 17.0.18 with PID 207158 (started by polula in /home/polula/Documentos/Williams-2026/PRS/PRS-BACKEND/vg-ms-patrimonioservice)
+2026-04-23T16:53:14.174-05:00 DEBUG 207158 --- [patrimonio-service] [           main] .i.a.i.r.AssetDisposalRestControllerTest : Running with Spring Boot v3.5.6, Spring v6.2.11
+2026-04-23T16:53:14.176-05:00  INFO 207158 --- [patrimonio-service] [           main] .i.a.i.r.AssetDisposalRestControllerTest : No active profile set, falling back to 1 default profile: "default"
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2026-04-23T16:53:18.509-05:00  INFO 207158 --- [patrimonio-service] [           main] .i.a.i.r.AssetDisposalRestControllerTest : Started AssetDisposalRestControllerTest in 5.124 seconds (process running for 7.499)
+2026-04-23T16:53:18.872-05:00  INFO 207158 --- [patrimonio-service] [     parallel-1] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-FILTER-START] GatewayHeaderAuthenticationFilter executing for PUT /api/v1/asset-disposals/ac0a0cf7-e18f-4bf8-9a95-5eb70e8ad614/assign-committee
+2026-04-23T16:53:18.874-05:00 DEBUG 207158 --- [patrimonio-service] [     parallel-1] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-AUTH] Request: PUT /api/v1/asset-disposals/ac0a0cf7-e18f-4bf8-9a95-5eb70e8ad614/assign-committee | Headers: X-User-Id=null, X-Municipal-Code=null, X-Roles=null, X-Permissions=null
+2026-04-23T16:53:18.875-05:00 DEBUG 207158 --- [patrimonio-service] [     parallel-1] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-AUTH] Request to PUT /api/v1/asset-disposals/ac0a0cf7-e18f-4bf8-9a95-5eb70e8ad614/assign-committee is PUBLIC (no X-User-Id or X-Municipal-Code headers)
+2026-04-23T16:53:19.117-05:00  INFO 207158 --- [patrimonio-service] [     parallel-2] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-FILTER-START] GatewayHeaderAuthenticationFilter executing for PUT /api/v1/asset-disposals/1518c213-1463-4554-a9f3-e3b636e993ed/resolve
+2026-04-23T16:53:19.118-05:00 DEBUG 207158 --- [patrimonio-service] [     parallel-2] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-AUTH] Request: PUT /api/v1/asset-disposals/1518c213-1463-4554-a9f3-e3b636e993ed/resolve | Headers: X-User-Id=null, X-Municipal-Code=null, X-Roles=null, X-Permissions=null
+2026-04-23T16:53:19.119-05:00 DEBUG 207158 --- [patrimonio-service] [     parallel-2] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-AUTH] Request to PUT /api/v1/asset-disposals/1518c213-1463-4554-a9f3-e3b636e993ed/resolve is PUBLIC (no X-User-Id or X-Municipal-Code headers)
+2026-04-23T16:53:19.145-05:00  INFO 207158 --- [patrimonio-service] [     parallel-3] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-FILTER-START] GatewayHeaderAuthenticationFilter executing for GET /api/v1/asset-disposals
+2026-04-23T16:53:19.145-05:00 DEBUG 207158 --- [patrimonio-service] [     parallel-3] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-AUTH] Request: GET /api/v1/asset-disposals | Headers: X-User-Id=null, X-Municipal-Code=null, X-Roles=null, X-Permissions=null
+2026-04-23T16:53:19.146-05:00 DEBUG 207158 --- [patrimonio-service] [     parallel-3] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-AUTH] Request to GET /api/v1/asset-disposals is PUBLIC (no X-User-Id or X-Municipal-Code headers)
+2026-04-23T16:53:19.177-05:00  INFO 207158 --- [patrimonio-service] [     parallel-4] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-FILTER-START] GatewayHeaderAuthenticationFilter executing for POST /api/v1/asset-disposals
+2026-04-23T16:53:19.178-05:00 DEBUG 207158 --- [patrimonio-service] [     parallel-4] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-AUTH] Request: POST /api/v1/asset-disposals | Headers: X-User-Id=null, X-Municipal-Code=null, X-Roles=null, X-Permissions=null
+2026-04-23T16:53:19.178-05:00 DEBUG 207158 --- [patrimonio-service] [     parallel-4] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-AUTH] Request to POST /api/v1/asset-disposals is PUBLIC (no X-User-Id or X-Municipal-Code headers)
+2026-04-23T16:53:19.214-05:00 ERROR 207158 --- [patrimonio-service] [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+
+> POST /api/v1/asset-disposals
+> WebTestClient-Request-Id: [4]
+> Content-Type: [application/json]
+> Content-Length: [233]
+
+{"municipalityId":null,"disposalType":null,"disposalReason":null,"reasonDescription":null,"technicalReportAuthorId":null,"observations":null,"requiresDestruction":null,"allowsDonation":null,"recoverableValue":null,"requestedBy":null}
+
+< 200 OK OK
+< Content-Type: [application/json]
+< Content-Length: [577]
+
+{"id":"c5960d22-11c8-41d6-8cb1-8b93f276aa90","municipalityId":null,"fileNumber":null,"disposalType":null,"disposalReason":null,"reasonDescription":null,"requestDate":null,"technicalEvaluationDate":null,"resolutionDate":null,"physicalRemovalDate":null,"technicalReportAuthorId":null,"technicalReport":null,"approvedById":null,"approvalDate":null,"fileStatus":null,"resolutionNumber":null,"supportingDocuments":null,"observations":null,"requiresDestruction":null,"allowsDonation":null,"recoverableValue":null,"requestedBy":null,"createdAt":null,"updatedBy":null,"updatedAt":null}
+
+[ERROR] Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.888 s <<< FAILURE! -- in pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest
+[ERROR] pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest.create_WithValidBody_ShouldReturnCreated -- Time elapsed: 0.060 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<201 CREATED> but was:<200 OK>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
+	at org.springframework.test.web.reactive.server.StatusAssertions.lambda$assertStatusAndReturn$4(StatusAssertions.java:236)
+	at org.springframework.test.web.reactive.server.ExchangeResult.assertWithDiagnostics(ExchangeResult.java:232)
+	at org.springframework.test.web.reactive.server.StatusAssertions.assertStatusAndReturn(StatusAssertions.java:236)
+	at org.springframework.test.web.reactive.server.StatusAssertions.isCreated(StatusAssertions.java:75)
+	at pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest.create_WithValidBody_ShouldReturnCreated(AssetDisposalRestControllerTest.java:58)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   AssetDisposalRestControllerTest.create_WithValidBody_ShouldReturnCreated:58 Status expected:<201 CREATED> but was:<200 OK>
+[INFO] 
+[ERROR] Tests run: 4, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10.259 s
+[INFO] Finished at: 2026-04-23T16:53:19-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.4:test (default-test) on project patrimonio-service: There are test failures.
+[ERROR] 
+[ERROR] See /home/polula/Documentos/Williams-2026/PRS/PRS-BACKEND/vg-ms-patrimonioservice/target/surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,25 @@
+version: "3.8"
+
+volumes:
+  patrimonio_pg_data:
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: jmeter-patrimonio-db
+    environment:
+      POSTGRES_DB: patrimonio_jmeter
+      POSTGRES_USER: jmeter
+      POSTGRES_PASSWORD: jmeter_pass
+    ports:
+      - "5433:5432"
+    volumes:
+      - patrimonio_pg_data:/var/lib/postgresql/data
+      - ./src/main/resources/db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+      - ./src/main/resources/db/insert-sbn-catalog.sql:/docker-entrypoint-initdb.d/02-insert-sbn-catalog.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U jmeter -d patrimonio_jmeter"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped

@@ -1,0 +1,31 @@
+spring:
+  r2dbc:
+    url: r2dbc:h2:mem:///patrimonio_test?options=DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+    pool:
+      enabled: true
+      initial-size: 2
+      max-size: 10
+      max-idle-time: 5m
+      validation-query: SELECT 1
+    init:
+      mode: always
+      schema-locations: classpath:db/schema-h2.sql
+
+  main:
+    lazy-initialization: true
+
+server:
+  port: 5003
+
+reactor:
+  netty:
+    io-worker-count: 4
+    io-select-count: 2
+
+logging:
+  level:
+    root: WARN
+    pe.edu.vallegrande.patrimonio_service: DEBUG
+    org.springframework.r2dbc: DEBUG

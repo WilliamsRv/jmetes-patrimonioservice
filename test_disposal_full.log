@@ -1,0 +1,186 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< pe.edu.vallegrande:patrimonio-service >----------------
+[INFO] Building patrimonio-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.11:prepare-agent (default) @ patrimonio-service ---
+[INFO] argLine set to -javaagent:/home/polula/.m2/repository/org/jacoco/org.jacoco.agent/0.8.11/org.jacoco.agent-0.8.11-runtime.jar=destfile=/home/polula/Documentos/Williams-2026/PRS/PRS-BACKEND/vg-ms-patrimonioservice/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ patrimonio-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ patrimonio-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ patrimonio-service ---
+[INFO] skip non existing resourceDirectory /home/polula/Documentos/Williams-2026/PRS/PRS-BACKEND/vg-ms-patrimonioservice/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ patrimonio-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ patrimonio-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest
+16:57:49.786 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest]: AssetDisposalRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:57:50.224 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration pe.edu.vallegrande.patrimonio_service.PatrimonioServiceApplication for test class pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-04-23T16:57:51.177-05:00  INFO 210329 --- [patrimonio-service] [           main] .i.a.i.r.AssetDisposalRestControllerTest : Starting AssetDisposalRestControllerTest using Java 17.0.18 with PID 210329 (started by polula in /home/polula/Documentos/Williams-2026/PRS/PRS-BACKEND/vg-ms-patrimonioservice)
+2026-04-23T16:57:51.179-05:00 DEBUG 210329 --- [patrimonio-service] [           main] .i.a.i.r.AssetDisposalRestControllerTest : Running with Spring Boot v3.5.6, Spring v6.2.11
+2026-04-23T16:57:51.181-05:00  INFO 210329 --- [patrimonio-service] [           main] .i.a.i.r.AssetDisposalRestControllerTest : No active profile set, falling back to 1 default profile: "default"
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2026-04-23T16:57:55.202-05:00  INFO 210329 --- [patrimonio-service] [           main] .i.a.i.r.AssetDisposalRestControllerTest : Started AssetDisposalRestControllerTest in 4.819 seconds (process running for 7.081)
+2026-04-23T16:57:55.674-05:00 ERROR 210329 --- [patrimonio-service] [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+
+> PUT /api/v1/asset-disposals/129033a1-54cb-4707-a020-8015c3a2610b/assign-committee
+> WebTestClient-Request-Id: [1]
+> Content-Type: [application/json]
+> Content-Length: [19]
+
+{"assignedBy":null}
+
+< 404 NOT_FOUND Not Found
+< Content-Type: [application/json]
+< Content-Length: [297]
+
+{"timestamp":"2026-04-23T21:57:55.604+00:00","path":"/api/v1/asset-disposals/129033a1-54cb-4707-a020-8015c3a2610b/assign-committee","status":404,"error":"Not Found","requestId":"6bf4dfdf","message":"No static resource api/v1/asset-disposals/129033a1-54cb-4707-a020-8015c3a2610b/assign-committee."}
+
+2026-04-23T16:57:55.720-05:00 ERROR 210329 --- [patrimonio-service] [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+
+> PUT /api/v1/asset-disposals/45ac3c86-7a4c-45f3-97de-63d5b26effc6/resolve
+> WebTestClient-Request-Id: [2]
+> Content-Type: [application/json]
+> Content-Length: [81]
+
+{"approved":null,"resolutionNumber":null,"observations":null,"approvedById":null}
+
+< 404 NOT_FOUND Not Found
+< Content-Type: [application/json]
+< Content-Length: [279]
+
+{"timestamp":"2026-04-23T21:57:55.718+00:00","path":"/api/v1/asset-disposals/45ac3c86-7a4c-45f3-97de-63d5b26effc6/resolve","status":404,"error":"Not Found","requestId":"60cef7b9","message":"No static resource api/v1/asset-disposals/45ac3c86-7a4c-45f3-97de-63d5b26effc6/resolve."}
+
+2026-04-23T16:57:55.738-05:00 ERROR 210329 --- [patrimonio-service] [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+
+> GET /api/v1/asset-disposals
+> WebTestClient-Request-Id: [3]
+
+No content
+
+< 404 NOT_FOUND Not Found
+< Content-Type: [application/json]
+< Content-Length: [188]
+
+{"timestamp":"2026-04-23T21:57:55.735+00:00","path":"/api/v1/asset-disposals","status":404,"error":"Not Found","requestId":"2f7bdd4","message":"No static resource api/v1/asset-disposals."}
+
+2026-04-23T16:57:55.755-05:00 ERROR 210329 --- [patrimonio-service] [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+
+> POST /api/v1/asset-disposals
+> WebTestClient-Request-Id: [4]
+> Content-Type: [application/json]
+> Content-Length: [233]
+
+{"municipalityId":null,"disposalType":null,"disposalReason":null,"reasonDescription":null,"technicalReportAuthorId":null,"observations":null,"requiresDestruction":null,"allowsDonation":null,"recoverableValue":null,"requestedBy":null}
+
+< 404 NOT_FOUND Not Found
+< Content-Type: [application/json]
+< Content-Length: [188]
+
+{"timestamp":"2026-04-23T21:57:55.753+00:00","path":"/api/v1/asset-disposals","status":404,"error":"Not Found","requestId":"956639e","message":"No static resource api/v1/asset-disposals."}
+
+[ERROR] Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 6.414 s <<< FAILURE! -- in pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest
+[ERROR] pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest.assignCommittee_ShouldReturnOk -- Time elapsed: 0.474 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200 OK> but was:<404 NOT_FOUND>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
+	at org.springframework.test.web.reactive.server.StatusAssertions.lambda$assertStatusAndReturn$4(StatusAssertions.java:236)
+	at org.springframework.test.web.reactive.server.ExchangeResult.assertWithDiagnostics(ExchangeResult.java:232)
+	at org.springframework.test.web.reactive.server.StatusAssertions.assertStatusAndReturn(StatusAssertions.java:236)
+	at org.springframework.test.web.reactive.server.StatusAssertions.isOk(StatusAssertions.java:68)
+	at pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest.assignCommittee_ShouldReturnOk(AssetDisposalRestControllerTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest.resolve_ShouldReturnOk -- Time elapsed: 0.021 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200 OK> but was:<404 NOT_FOUND>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
+	at org.springframework.test.web.reactive.server.StatusAssertions.lambda$assertStatusAndReturn$4(StatusAssertions.java:236)
+	at org.springframework.test.web.reactive.server.ExchangeResult.assertWithDiagnostics(ExchangeResult.java:232)
+	at org.springframework.test.web.reactive.server.StatusAssertions.assertStatusAndReturn(StatusAssertions.java:236)
+	at org.springframework.test.web.reactive.server.StatusAssertions.isOk(StatusAssertions.java:68)
+	at pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest.resolve_ShouldReturnOk(AssetDisposalRestControllerTest.java:90)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest.getAll_ShouldReturnStatusOk -- Time elapsed: 0.012 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200 OK> but was:<404 NOT_FOUND>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
+	at org.springframework.test.web.reactive.server.StatusAssertions.lambda$assertStatusAndReturn$4(StatusAssertions.java:236)
+	at org.springframework.test.web.reactive.server.ExchangeResult.assertWithDiagnostics(ExchangeResult.java:232)
+	at org.springframework.test.web.reactive.server.StatusAssertions.assertStatusAndReturn(StatusAssertions.java:236)
+	at org.springframework.test.web.reactive.server.StatusAssertions.isOk(StatusAssertions.java:68)
+	at pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest.getAll_ShouldReturnStatusOk(AssetDisposalRestControllerTest.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest.create_WithValidBody_ShouldReturnCreated -- Time elapsed: 0.015 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200 OK> but was:<404 NOT_FOUND>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
+	at org.springframework.test.web.reactive.server.StatusAssertions.lambda$assertStatusAndReturn$4(StatusAssertions.java:236)
+	at org.springframework.test.web.reactive.server.ExchangeResult.assertWithDiagnostics(ExchangeResult.java:232)
+	at org.springframework.test.web.reactive.server.StatusAssertions.assertStatusAndReturn(StatusAssertions.java:236)
+	at org.springframework.test.web.reactive.server.StatusAssertions.isOk(StatusAssertions.java:68)
+	at pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetDisposalRestControllerTest.create_WithValidBody_ShouldReturnCreated(AssetDisposalRestControllerTest.java:58)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   AssetDisposalRestControllerTest.assignCommittee_ShouldReturnOk:74 Status expected:<200 OK> but was:<404 NOT_FOUND>
+[ERROR]   AssetDisposalRestControllerTest.create_WithValidBody_ShouldReturnCreated:58 Status expected:<200 OK> but was:<404 NOT_FOUND>
+[ERROR]   AssetDisposalRestControllerTest.getAll_ShouldReturnStatusOk:42 Status expected:<200 OK> but was:<404 NOT_FOUND>
+[ERROR]   AssetDisposalRestControllerTest.resolve_ShouldReturnOk:90 Status expected:<200 OK> but was:<404 NOT_FOUND>
+[INFO] 
+[ERROR] Tests run: 4, Failures: 4, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.557 s
+[INFO] Finished at: 2026-04-23T16:57:55-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.4:test (default-test) on project patrimonio-service: There are test failures.
+[ERROR] 
+[ERROR] See /home/polula/Documentos/Williams-2026/PRS/PRS-BACKEND/vg-ms-patrimonioservice/target/surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

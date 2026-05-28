@@ -1,0 +1,264 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< pe.edu.vallegrande:patrimonio-service >----------------
+[INFO] Building patrimonio-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.11:prepare-agent (default) @ patrimonio-service ---
+[INFO] argLine set to -javaagent:/home/polula/.m2/repository/org/jacoco/org.jacoco.agent/0.8.11/org.jacoco.agent-0.8.11-runtime.jar=destfile=/home/polula/Documentos/Williams-2026/PRS/PRS-BACKEND/vg-ms-patrimonioservice/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ patrimonio-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ patrimonio-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ patrimonio-service ---
+[INFO] skip non existing resourceDirectory /home/polula/Documentos/Williams-2026/PRS/PRS-BACKEND/vg-ms-patrimonioservice/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ patrimonio-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ patrimonio-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetRestControllerTest
+16:39:04.350 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetRestControllerTest]: AssetRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:39:04.753 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration pe.edu.vallegrande.patrimonio_service.PatrimonioServiceApplication for test class pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetRestControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-04-23T16:39:05.737-05:00  INFO 196984 --- [patrimonio-service] [           main] p.e.v.p.i.a.i.r.AssetRestControllerTest  : Starting AssetRestControllerTest using Java 17.0.18 with PID 196984 (started by polula in /home/polula/Documentos/Williams-2026/PRS/PRS-BACKEND/vg-ms-patrimonioservice)
+2026-04-23T16:39:05.740-05:00 DEBUG 196984 --- [patrimonio-service] [           main] p.e.v.p.i.a.i.r.AssetRestControllerTest  : Running with Spring Boot v3.5.6, Spring v6.2.11
+2026-04-23T16:39:05.742-05:00  INFO 196984 --- [patrimonio-service] [           main] p.e.v.p.i.a.i.r.AssetRestControllerTest  : No active profile set, falling back to 1 default profile: "default"
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2026-04-23T16:39:09.676-05:00  INFO 196984 --- [patrimonio-service] [           main] p.e.v.p.i.config.SecurityConfig          : [MS-CONFIG] Initializing SecurityWebFilterChain
+2026-04-23T16:39:10.815-05:00  INFO 196984 --- [patrimonio-service] [           main] p.e.v.p.i.a.i.r.AssetRestControllerTest  : Started AssetRestControllerTest in 5.858 seconds (process running for 8.159)
+2026-04-23T16:39:11.143-05:00  INFO 196984 --- [patrimonio-service] [     parallel-1] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-FILTER-START] GatewayHeaderAuthenticationFilter executing for GET /assets/a20b09f1-5d31-45a8-8091-9115a3129f8a
+2026-04-23T16:39:11.147-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-1] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-AUTH] Request: GET /assets/a20b09f1-5d31-45a8-8091-9115a3129f8a | Headers: X-User-Id=00000000-0000-0000-0000-000000000001, X-Municipal-Code=00000000-0000-0000-0000-000000000002, X-Roles=USER, X-Permissions=assets:read
+2026-04-23T16:39:11.148-05:00  INFO 196984 --- [patrimonio-service] [     parallel-1] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-AUTH] Authenticated request detected for user: 00000000-0000-0000-0000-000000000001 to GET /assets/a20b09f1-5d31-45a8-8091-9115a3129f8a
+2026-04-23T16:39:11.150-05:00  INFO 196984 --- [patrimonio-service] [     parallel-1] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-AUTH] User 00000000-0000-0000-0000-000000000001 authorities: [ROLE_USER, assets:read] for request to GET /assets/a20b09f1-5d31-45a8-8091-9115a3129f8a
+2026-04-23T16:39:11.234-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2026-04-23T16:39:11.239-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] athPatternParserServerWebExchangeMatcher : Request 'GET /assets/a20b09f1-5d31-45a8-8091-9115a3129f8a' doesn't match 'POST /logout'
+2026-04-23T16:39:11.240-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : No matches found
+2026-04-23T16:39:11.246-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui.html', method=null}
+2026-04-23T16:39:11.247-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] athPatternParserServerWebExchangeMatcher : Request 'GET /assets/a20b09f1-5d31-45a8-8091-9115a3129f8a' doesn't match 'null /swagger-ui.html'
+2026-04-23T16:39:11.251-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2026-04-23T16:39:11.251-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] athPatternParserServerWebExchangeMatcher : Request 'GET /assets/a20b09f1-5d31-45a8-8091-9115a3129f8a' doesn't match 'null /swagger-ui/**'
+2026-04-23T16:39:11.252-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2026-04-23T16:39:11.252-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] athPatternParserServerWebExchangeMatcher : Request 'GET /assets/a20b09f1-5d31-45a8-8091-9115a3129f8a' doesn't match 'null /v3/api-docs/**'
+2026-04-23T16:39:11.252-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/webjars/**', method=null}
+2026-04-23T16:39:11.253-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] athPatternParserServerWebExchangeMatcher : Request 'GET /assets/a20b09f1-5d31-45a8-8091-9115a3129f8a' doesn't match 'null /webjars/**'
+2026-04-23T16:39:11.253-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/health', method=null}
+2026-04-23T16:39:11.254-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] athPatternParserServerWebExchangeMatcher : Request 'GET /assets/a20b09f1-5d31-45a8-8091-9115a3129f8a' doesn't match 'null /actuator/health'
+2026-04-23T16:39:11.254-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/info', method=null}
+2026-04-23T16:39:11.255-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] athPatternParserServerWebExchangeMatcher : Request 'GET /assets/a20b09f1-5d31-45a8-8091-9115a3129f8a' doesn't match 'null /actuator/info'
+2026-04-23T16:39:11.255-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : No matches found
+2026-04-23T16:39:11.256-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/**', method=OPTIONS}
+2026-04-23T16:39:11.257-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] athPatternParserServerWebExchangeMatcher : Request 'GET /assets/a20b09f1-5d31-45a8-8091-9115a3129f8a' doesn't match 'OPTIONS /**'
+2026-04-23T16:39:11.258-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : No matches found
+2026-04-23T16:39:11.262-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] a.DelegatingReactiveAuthorizationManager : Checking authorization on '/assets/a20b09f1-5d31-45a8-8091-9115a3129f8a' using org.springframework.security.authorization.AuthenticatedReactiveAuthorizationManager@4641f328
+2026-04-23T16:39:11.268-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-2] o.s.s.w.s.a.AuthorizationWebFilter       : Authorization successful
+2026-04-23T16:39:11.466-05:00 ERROR 196984 --- [patrimonio-service] [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+
+> GET /assets/a20b09f1-5d31-45a8-8091-9115a3129f8a
+> WebTestClient-Request-Id: [1]
+> X-User-Id: [00000000-0000-0000-0000-000000000001]
+> X-Municipal-Code: [00000000-0000-0000-0000-000000000002]
+> X-Roles: [USER]
+> X-Permissions: [assets:read]
+
+No content
+
+< 404 NOT_FOUND Not Found
+< Content-Type: [application/json]
+< Content-Length: [231]
+< Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+< Pragma: [no-cache]
+< Expires: [0]
+< X-Content-Type-Options: [nosniff]
+< X-Frame-Options: [DENY]
+< X-XSS-Protection: [0]
+< Referrer-Policy: [no-referrer]
+
+{"timestamp":"2026-04-23T21:39:11.329+00:00","path":"/assets/a20b09f1-5d31-45a8-8091-9115a3129f8a","status":404,"error":"Not Found","requestId":"58cde310","message":"No static resource assets/a20b09f1-5d31-45a8-8091-9115a3129f8a."}
+
+2026-04-23T16:39:11.512-05:00  INFO 196984 --- [patrimonio-service] [     parallel-3] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-FILTER-START] GatewayHeaderAuthenticationFilter executing for GET /assets
+2026-04-23T16:39:11.512-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-3] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-AUTH] Request: GET /assets | Headers: X-User-Id=00000000-0000-0000-0000-000000000001, X-Municipal-Code=00000000-0000-0000-0000-000000000002, X-Roles=USER, X-Permissions=assets:read
+2026-04-23T16:39:11.513-05:00  INFO 196984 --- [patrimonio-service] [     parallel-3] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-AUTH] Authenticated request detected for user: 00000000-0000-0000-0000-000000000001 to GET /assets
+2026-04-23T16:39:11.513-05:00  INFO 196984 --- [patrimonio-service] [     parallel-3] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-AUTH] User 00000000-0000-0000-0000-000000000001 authorities: [ROLE_USER, assets:read] for request to GET /assets
+2026-04-23T16:39:11.516-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2026-04-23T16:39:11.516-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] athPatternParserServerWebExchangeMatcher : Request 'GET /assets' doesn't match 'POST /logout'
+2026-04-23T16:39:11.516-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : No matches found
+2026-04-23T16:39:11.517-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui.html', method=null}
+2026-04-23T16:39:11.517-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] athPatternParserServerWebExchangeMatcher : Request 'GET /assets' doesn't match 'null /swagger-ui.html'
+2026-04-23T16:39:11.517-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2026-04-23T16:39:11.517-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] athPatternParserServerWebExchangeMatcher : Request 'GET /assets' doesn't match 'null /swagger-ui/**'
+2026-04-23T16:39:11.518-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2026-04-23T16:39:11.518-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] athPatternParserServerWebExchangeMatcher : Request 'GET /assets' doesn't match 'null /v3/api-docs/**'
+2026-04-23T16:39:11.518-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/webjars/**', method=null}
+2026-04-23T16:39:11.518-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] athPatternParserServerWebExchangeMatcher : Request 'GET /assets' doesn't match 'null /webjars/**'
+2026-04-23T16:39:11.518-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/health', method=null}
+2026-04-23T16:39:11.519-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] athPatternParserServerWebExchangeMatcher : Request 'GET /assets' doesn't match 'null /actuator/health'
+2026-04-23T16:39:11.519-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/info', method=null}
+2026-04-23T16:39:11.519-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] athPatternParserServerWebExchangeMatcher : Request 'GET /assets' doesn't match 'null /actuator/info'
+2026-04-23T16:39:11.519-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : No matches found
+2026-04-23T16:39:11.520-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/**', method=OPTIONS}
+2026-04-23T16:39:11.520-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] athPatternParserServerWebExchangeMatcher : Request 'GET /assets' doesn't match 'OPTIONS /**'
+2026-04-23T16:39:11.520-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : No matches found
+2026-04-23T16:39:11.521-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] a.DelegatingReactiveAuthorizationManager : Checking authorization on '/assets' using org.springframework.security.authorization.AuthenticatedReactiveAuthorizationManager@4641f328
+2026-04-23T16:39:11.521-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-4] o.s.s.w.s.a.AuthorizationWebFilter       : Authorization successful
+2026-04-23T16:39:11.527-05:00 ERROR 196984 --- [patrimonio-service] [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+
+> GET /assets
+> WebTestClient-Request-Id: [2]
+> X-User-Id: [00000000-0000-0000-0000-000000000001]
+> X-Municipal-Code: [00000000-0000-0000-0000-000000000002]
+> X-Roles: [USER]
+> X-Permissions: [assets:read]
+
+No content
+
+< 404 NOT_FOUND Not Found
+< Content-Type: [application/json]
+< Content-Length: [157]
+< Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+< Pragma: [no-cache]
+< Expires: [0]
+< X-Content-Type-Options: [nosniff]
+< X-Frame-Options: [DENY]
+< X-XSS-Protection: [0]
+< Referrer-Policy: [no-referrer]
+
+{"timestamp":"2026-04-23T21:39:11.525+00:00","path":"/assets","status":404,"error":"Not Found","requestId":"20775538","message":"No static resource assets."}
+
+2026-04-23T16:39:11.570-05:00  INFO 196984 --- [patrimonio-service] [     parallel-5] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-FILTER-START] GatewayHeaderAuthenticationFilter executing for POST /assets
+2026-04-23T16:39:11.570-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-5] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-AUTH] Request: POST /assets | Headers: X-User-Id=00000000-0000-0000-0000-000000000001, X-Municipal-Code=00000000-0000-0000-0000-000000000002, X-Roles=USER, X-Permissions=assets:write
+2026-04-23T16:39:11.570-05:00  INFO 196984 --- [patrimonio-service] [     parallel-5] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-AUTH] Authenticated request detected for user: 00000000-0000-0000-0000-000000000001 to POST /assets
+2026-04-23T16:39:11.570-05:00  INFO 196984 --- [patrimonio-service] [     parallel-5] .p.i.c.GatewayHeaderAuthenticationFilter : [MS-AUTH] User 00000000-0000-0000-0000-000000000001 authorities: [ROLE_USER, assets:write] for request to POST /assets
+2026-04-23T16:39:11.572-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2026-04-23T16:39:11.572-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] athPatternParserServerWebExchangeMatcher : Request 'POST /assets' doesn't match 'POST /logout'
+2026-04-23T16:39:11.573-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : No matches found
+2026-04-23T16:39:11.574-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui.html', method=null}
+2026-04-23T16:39:11.574-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] athPatternParserServerWebExchangeMatcher : Request 'POST /assets' doesn't match 'null /swagger-ui.html'
+2026-04-23T16:39:11.575-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2026-04-23T16:39:11.575-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] athPatternParserServerWebExchangeMatcher : Request 'POST /assets' doesn't match 'null /swagger-ui/**'
+2026-04-23T16:39:11.575-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2026-04-23T16:39:11.575-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] athPatternParserServerWebExchangeMatcher : Request 'POST /assets' doesn't match 'null /v3/api-docs/**'
+2026-04-23T16:39:11.576-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/webjars/**', method=null}
+2026-04-23T16:39:11.576-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] athPatternParserServerWebExchangeMatcher : Request 'POST /assets' doesn't match 'null /webjars/**'
+2026-04-23T16:39:11.576-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/health', method=null}
+2026-04-23T16:39:11.576-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] athPatternParserServerWebExchangeMatcher : Request 'POST /assets' doesn't match 'null /actuator/health'
+2026-04-23T16:39:11.577-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/info', method=null}
+2026-04-23T16:39:11.577-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] athPatternParserServerWebExchangeMatcher : Request 'POST /assets' doesn't match 'null /actuator/info'
+2026-04-23T16:39:11.577-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : No matches found
+2026-04-23T16:39:11.577-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/**', method=OPTIONS}
+2026-04-23T16:39:11.577-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] athPatternParserServerWebExchangeMatcher : Request 'POST /assets' doesn't match 'OPTIONS /**'
+2026-04-23T16:39:11.577-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] o.s.s.w.s.u.m.OrServerWebExchangeMatcher : No matches found
+2026-04-23T16:39:11.578-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] a.DelegatingReactiveAuthorizationManager : Checking authorization on '/assets' using org.springframework.security.authorization.AuthenticatedReactiveAuthorizationManager@4641f328
+2026-04-23T16:39:11.578-05:00 DEBUG 196984 --- [patrimonio-service] [     parallel-6] o.s.s.w.s.a.AuthorizationWebFilter       : Authorization successful
+2026-04-23T16:39:11.585-05:00 ERROR 196984 --- [patrimonio-service] [           main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+
+> POST /assets
+> WebTestClient-Request-Id: [3]
+> Content-Type: [application/json]
+> X-User-Id: [00000000-0000-0000-0000-000000000001]
+> X-Municipal-Code: [00000000-0000-0000-0000-000000000002]
+> X-Roles: [USER]
+> X-Permissions: [assets:write]
+> Content-Length: [1083]
+
+{"municipalityId":null,"assetCode":"TEST-001","internalCode":null,"sbnCode":null,"description":null,"categoryId":null,"subcategoryId":null,"brand":null,"model":null,"serialNumber":null,"usefulLife":null,"assetPlate":null,"qrCode":null,"barcode":null,"rfidTag":null,"color":null,"dimensions":null,"weight":null,"material":null,"supplierId":null,"acquisitionDate":null,"acquisitionType":null,"invoiceNumber":null,"purchaseOrderNumber":null,"pecosaNumber":null,"acquisitionValue":null,"currency":null,"currentValue":null,"residualValue":null,"accumulatedDepreciation":null,"assetStatus":null,"conservationStatus":null,"currentLocationId":null,"currentResponsibleId":null,"currentAreaId":null,"entryDate":null,"lastInventoryDate":null,"nextDepreciationDate":null,"warrantyExpirationDate":null,"observations":null,"technicalSpecifications":null,"imageUrl":null,"attachedDocuments":null,"customFields":null,"isInventoriable":null,"requiresMaintenance":null,"isDepreciable":null,"createdBy":null,"finalUserId":null,"altaDate":null,"altaDocType":null,"altaDocNumber":null,"accountCode":null}
+
+< 404 NOT_FOUND Not Found
+< Content-Type: [application/json]
+< Content-Length: [156]
+< Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+< Pragma: [no-cache]
+< Expires: [0]
+< X-Content-Type-Options: [nosniff]
+< X-Frame-Options: [DENY]
+< X-XSS-Protection: [0]
+< Referrer-Policy: [no-referrer]
+
+{"timestamp":"2026-04-23T21:39:11.582+00:00","path":"/assets","status":404,"error":"Not Found","requestId":"1ff9927","message":"No static resource assets."}
+
+[ERROR] Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 7.628 s <<< FAILURE! -- in pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetRestControllerTest
+[ERROR] pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetRestControllerTest.getById_WhenExists_ShouldReturnAsset -- Time elapsed: 0.660 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200 OK> but was:<404 NOT_FOUND>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
+	at org.springframework.test.web.reactive.server.StatusAssertions.lambda$assertStatusAndReturn$4(StatusAssertions.java:236)
+	at org.springframework.test.web.reactive.server.ExchangeResult.assertWithDiagnostics(ExchangeResult.java:232)
+	at org.springframework.test.web.reactive.server.StatusAssertions.assertStatusAndReturn(StatusAssertions.java:236)
+	at org.springframework.test.web.reactive.server.StatusAssertions.isOk(StatusAssertions.java:68)
+	at pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetRestControllerTest.getById_WhenExists_ShouldReturnAsset(AssetRestControllerTest.java:68)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetRestControllerTest.getAll_ShouldReturnStatusOk -- Time elapsed: 0.028 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200 OK> but was:<404 NOT_FOUND>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
+	at org.springframework.test.web.reactive.server.StatusAssertions.lambda$assertStatusAndReturn$4(StatusAssertions.java:236)
+	at org.springframework.test.web.reactive.server.ExchangeResult.assertWithDiagnostics(ExchangeResult.java:232)
+	at org.springframework.test.web.reactive.server.StatusAssertions.assertStatusAndReturn(StatusAssertions.java:236)
+	at org.springframework.test.web.reactive.server.StatusAssertions.isOk(StatusAssertions.java:68)
+	at pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetRestControllerTest.getAll_ShouldReturnStatusOk(AssetRestControllerTest.java:50)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetRestControllerTest.create_WithValidBody_ShouldReturnCreated -- Time elapsed: 0.053 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<201 CREATED> but was:<404 NOT_FOUND>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
+	at org.springframework.test.web.reactive.server.StatusAssertions.lambda$assertStatusAndReturn$4(StatusAssertions.java:236)
+	at org.springframework.test.web.reactive.server.ExchangeResult.assertWithDiagnostics(ExchangeResult.java:232)
+	at org.springframework.test.web.reactive.server.StatusAssertions.assertStatusAndReturn(StatusAssertions.java:236)
+	at org.springframework.test.web.reactive.server.StatusAssertions.isCreated(StatusAssertions.java:75)
+	at pe.edu.vallegrande.patrimonio_service.infrastructure.adapters.input.rest.AssetRestControllerTest.create_WithValidBody_ShouldReturnCreated(AssetRestControllerTest.java:92)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   AssetRestControllerTest.create_WithValidBody_ShouldReturnCreated:92 Status expected:<201 CREATED> but was:<404 NOT_FOUND>
+[ERROR]   AssetRestControllerTest.getAll_ShouldReturnStatusOk:50 Status expected:<200 OK> but was:<404 NOT_FOUND>
+[ERROR]   AssetRestControllerTest.getById_WhenExists_ShouldReturnAsset:68 Status expected:<200 OK> but was:<404 NOT_FOUND>
+[INFO] 
+[ERROR] Tests run: 3, Failures: 3, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10.866 s
+[INFO] Finished at: 2026-04-23T16:39:11-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.4:test (default-test) on project patrimonio-service: There are test failures.
+[ERROR] 
+[ERROR] See /home/polula/Documentos/Williams-2026/PRS/PRS-BACKEND/vg-ms-patrimonioservice/target/surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

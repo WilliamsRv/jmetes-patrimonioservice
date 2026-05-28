@@ -1,0 +1,12 @@
+workflow-aggregator:latest
+git:latest
+junit:latest
+slack:latest
+sonar:latest
+htmlpublisher:latest
+blueocean:latest
+docker-workflow:latest
+credentials-binding:latest
+pipeline-stage-view:latest
+matrix-project:latest
+antisamy-markup-formatter:latest
