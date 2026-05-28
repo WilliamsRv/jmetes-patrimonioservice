@@ -1,8 +1,3 @@
-version: "3.8"
-
-volumes:
-  patrimonio_pg_data:
-
 services:
   postgres:
     image: postgres:16-alpine
@@ -14,7 +9,6 @@ services:
     ports:
       - "5433:5432"
     volumes:
-      - patrimonio_pg_data:/var/lib/postgresql/data
       - ./src/main/resources/db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
       - ./src/main/resources/db/insert-sbn-catalog.sql:/docker-entrypoint-initdb.d/02-insert-sbn-catalog.sql
     healthcheck:
@@ -22,4 +16,19 @@ services:
       interval: 5s
       timeout: 5s
       retries: 10
+    restart: unless-stopped
+
+  patrimonio-service:
+    build: .
+    container_name: patrimonio-service
+    ports:
+      - "5003:5003"
+    environment:
+      SPRING_R2DBC_URL: "r2dbc:postgresql://postgres:5432/patrimonio_jmeter"
+      SPRING_R2DBC_USERNAME: "jmeter"
+      SPRING_R2DBC_PASSWORD: "jmeter_pass"
+      SERVER_PORT: "5003"
+    depends_on:
+      postgres:
+        condition: service_healthy
     restart: unless-stopped
